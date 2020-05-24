@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wenyan202.github.io/</id>
-    <title>Gridea</title>
-    <updated>2020-05-24T20:34:09.903Z</updated>
+    <title>wen&apos;s blog</title>
+    <updated>2020-05-24T20:40:19.032Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wenyan202.github.io/"/>
     <link rel="self" href="https://wenyan202.github.io/atom.xml"/>
     <subtitle>Welcome to Wen&apos;s Blog</subtitle>
     <logo>https://wenyan202.github.io/images/avatar.png</logo>
     <icon>https://wenyan202.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, wen&apos;s blog</rights>
     <entry>
         <title type="html"><![CDATA[The first blog]]></title>
         <id>https://wenyan202.github.io/post/the-first-blog/</id>
