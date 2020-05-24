@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://https://wenyan202.github.io/wenYan202.github.io/</id>
+    <id>https://wenyan202.github.io/</id>
     <title>Gridea</title>
-    <updated>2020-05-24T19:53:57.835Z</updated>
+    <updated>2020-05-24T19:56:45.544Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://https://wenyan202.github.io/wenYan202.github.io/"/>
-    <link rel="self" href="https://https://wenyan202.github.io/wenYan202.github.io/atom.xml"/>
+    <link rel="alternate" href="https://wenyan202.github.io/"/>
+    <link rel="self" href="https://wenyan202.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>https://https://wenyan202.github.io/wenYan202.github.io/images/avatar.png</logo>
-    <icon>https://https://wenyan202.github.io/wenYan202.github.io/favicon.ico</icon>
+    <logo>https://wenyan202.github.io/images/avatar.png</logo>
+    <icon>https://wenyan202.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
     <entry>
         <title type="html"><![CDATA[The first blog]]></title>
-        <id>https://https://wenyan202.github.io/wenYan202.github.io/post/the-first-blog/</id>
-        <link href="https://https://wenyan202.github.io/wenYan202.github.io/post/the-first-blog/">
+        <id>https://wenyan202.github.io/post/the-first-blog/</id>
+        <link href="https://wenyan202.github.io/post/the-first-blog/">
         </link>
         <updated>2020-04-24T10:52:41.000Z</updated>
         <content type="html"><![CDATA[<p>This is my first blog</p>
@@ -21,8 +21,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://https://wenyan202.github.io/wenYan202.github.io/post/hello-gridea/</id>
-        <link href="https://https://wenyan202.github.io/wenYan202.github.io/post/hello-gridea/">
+        <id>https://wenyan202.github.io/post/hello-gridea/</id>
+        <link href="https://wenyan202.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
