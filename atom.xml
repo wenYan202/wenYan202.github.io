@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wenyan202.github.io/</id>
     <title>wen&apos;s blog</title>
-    <updated>2020-12-09T15:19:04.444Z</updated>
+    <updated>2020-12-09T15:27:48.890Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wenyan202.github.io/"/>
     <link rel="self" href="https://wenyan202.github.io/atom.xml"/>
@@ -10,15 +10,6 @@
     <logo>https://wenyan202.github.io/images/avatar.png</logo>
     <icon>https://wenyan202.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, wen&apos;s blog</rights>
-    <entry>
-        <title type="html"><![CDATA[The first blog]]></title>
-        <id>https://wenyan202.github.io/post/the-first-blog/</id>
-        <link href="https://wenyan202.github.io/post/the-first-blog/">
-        </link>
-        <updated>2020-04-23T22:52:41.000Z</updated>
-        <content type="html"><![CDATA[<p>This is my first blog</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://wenyan202.github.io/post/hello-gridea/</id>
