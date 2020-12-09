@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wenyan202.github.io/</id>
     <title>wen&apos;s blog</title>
-    <updated>2020-12-09T21:45:26.260Z</updated>
+    <updated>2020-12-09T22:55:56.177Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wenyan202.github.io/"/>
     <link rel="self" href="https://wenyan202.github.io/atom.xml"/>
@@ -16,63 +16,16 @@
         <link href="https://wenyan202.github.io/post/conception-and-development-of-an-augmented-reality-recommender-system-for-garden-design/">
         </link>
         <updated>2020-01-10T04:50:55.000Z</updated>
-        <content type="html"><![CDATA[<!-- more -->
-<h1 id="abstract">Abstract</h1>
-<p>Gardening is much more complicated than one could think at first. Besides considering the aesthetics, further expertise is needed, especially regarding the many different aspects affecting the small ecosystem composed by the chosen plants. In order to ease things for amateur gardeners, here it is presented an intuitive approach of augmented reality garden design tool for mobile devices. The start of this process consists in gathering surrounding information and identifying user preferences. After calculating the recommendations, the appropriate garden arrangement can be visualized on the mobile device via a 3D preview, allowing users to modify the given output if needed.</p>
-<h1 id="conception-design">Conception Design</h1>
-<p>In consideration of the high complexity of the horticultural design, it is difficult for amateurs to master this expertise in a short period. An approach combining RS and AR is proposed to provide a recommended garden layout for those who lack horticultural knowledge. Users can enjoy the process of garden design on a scientific and aesthetic basis.<br>
-<img src="https://wenyan202.github.io//post-images/1607546241345.JPG" alt="" loading="lazy"><br>
-To achieve this goal, the operations of this project can be divided into three steps.<br>
-<strong>Step 1. Area Detection</strong><br>
-Users need to scan the garden and determine the boundary as well as the available space in the garden.<br>
-<strong>Step 2. Preference Elicitation</strong><br>
-The user preferences, including location and favorite color, need to be filled. All this information is the basis of the RS.<br>
-<strong>Step 3. Recommendation Visualization and Customization.</strong><br>
-After finishing inputting, the server starts to calculate the recommendation algorithm and visualize the output. The outcome should be customized easily.</p>
-<h1 id="system-architecture">System Architecture</h1>
-<p>The application is based on the client-server model, and its essential components can be divided into three sections: database, user interface, and server.<br>
-The pivot section of this app is the server, which is used to connect the user interface and database, realize the operations (create, read, update and delete) on the database, and implement the recommendations. The server uses TCP protocol for connection to assure the stable connection, provide reliable transmission, and ensure the accessibility of subsequently recommended algorithms.<br>
-<img src="https://wenyan202.github.io//post-images/1607545455401.JPG" alt="" loading="lazy"><br>
-The workflow of the whole system is divided into two processes: the request process (represented by the red arrow in Figure) and the response process (represented by the green arrow). The user submits garden restrictions and user preferences through the interface, along with the necessary information for filter. After obtaining the required information, the server queries and outputs the correct data through the filter algorithm, and loads the data as input information into the RS model to calculate. The algorithm here consists of two parts: plant selection and garden arrangement. Finally, the system generates the recommended garden layout result as an output, and return to the user interface and visualize it by AR.</p>
-<h1 id="prototype-implementation">Prototype Implementation</h1>
-<p>For this prototype, the determination of the garden boundary is letting users walk around the garden. After choosing the favorite fence style, users follow the instructions given by the system to start the corresponding operation.<br>
-Figure (https://wenyan202.github.io//post-images/1607547903436.JPG)<br>
-The garden design is in a specific real-world scenario. For the non-empty garden, the already existing objects must be considered. This part is about how users to place the actual objects in the garden.<br>
-The &quot;plant information&quot; panel pops up whenever any plant is selected to place. The panel can be expanded to display the plant’s details.<br>
-<img src="https://wenyan202.github.io//post-images/1607548482279.JPG" alt="" loading="lazy"><br>
-Before placing, the system needs to determine whether this object is real or not. If not real, it represents the user wants to place it at this point as preferences. In this case, the virtual 3D model of this object is placed at that point. Conversely, if the object is real, instead of a 3D model, the system places a transparent 3D cylinder model at that point and reminds the<br>
-user: &quot;remember to adjust the size of the cylinder to match the real object space&quot;. Simulating the size of the real object with this 3D cylinder model is to provide enough space for it in later layout realizing a perfect combination of virtual objects and the real world. These functions not only helps users to mark the actual object but also as a pre-design for the garden, which can enhance the user experience.<br>
-It is difficult to propose a fix garden arrangement from gardening rules. However, the rational division of the garden is a critical part of garden design, to enhance visual enjoyment, and facilitate later maintenance.<br>
-<img src="https://wenyan202.github.io//post-images/1607548773191.JPG" alt="" loading="lazy"><br>
-The six garden design templates are extracted from the successful garden design scheme in the previous “Design” section. In conjunction with the previous user preferences, the final garden layout is recommended generated automatically according to the selected style.<br>
-After finishing the design operation, users can view the detail of all objects in the garden.<br>
-<img src="https://wenyan202.github.io//post-images/1607548791391.JPG" alt="" loading="lazy"><br>
-After the final garden is approved, the user can save the floor plan into the database directly. The saved garden, which is presented in the form of a 2D map, can be viewed. All the garden details, including user preferences and placed objects can be checked as well.</p>
-<h1 id="evaluation">Evaluation</h1>
-<p>Evaluation is an indispensable part of software development. The usability of functions, the reliability of the recommendation algorithms, and the superiority of the results would be validated and proved through evaluation. Besides, a fact-based, unbiased, and reasonable evaluation can also help to obtain an overall understanding of the garden design tool and understand its prospects in future development.<br>
-<strong>SUS</strong><br>
-The score reported by SUS items is 77.336, which qualifies as “Good”. The score does not reach the “Excellent&quot;, which indicates that the usability of the system still needs to be strengthened, and the design of the user interface should involve more hints to ensure simple and easy learning.<br>
-<strong>UEQ</strong><br>
-Figure below illustrates the mean value for per item in UEQ, which consists of eight items. The scores of the last two items are particularly high, which indicates that users have approved the innovative aspects of the application. The items 1-4 represent pragmatic quality and the rest express the hedonic quality of the project.<br>
-<img src="https://wenyan202.github.io//post-images/1607549577627.JPG" alt="" loading="lazy"><br>
-From the results of the evaluation, we could conclude that the functionality of the app seems to meet the requirement of users. The usability and user experience of the project are good, although some details can be optimized, the overall evaluation is satisfactory.</p>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[About Me ]]></title>
         <id>https://wenyan202.github.io/post/about/</id>
         <link href="https://wenyan202.github.io/post/about/">
         </link>
-        <updated>2019-01-24T14:09:48.000Z</updated>
+        <updated>2019-01-23T17:09:48.000Z</updated>
         <summary type="html"><![CDATA[<p>🤝Hello, I'm Wen Yan. Welcome to my Blog. 👏</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>🤝Hello, I'm Wen Yan. Welcome to my Blog. 👏</p>
-<!-- more -->
-<p>🙋I am a Chinese girl. I finished my bachelor's degree at the University  Zhengzhou in China. My major was computer science and technology. Then I come to Germany to start my master and mainly focus on embedded system. In 2019, I graduated from Unnversity Duisburg-Essen. 👩‍🎓</p>
-<p>❤️I love my major, comperter science and engeering.❤️</p>
-<p>My time as a bachelor student opened my eyes to the excitement and wider benefit of computer science.  And then I had the chance to do some different projects on my Masters stage and that's inspired me to take up the challenge of future.</p>
-<p>I condersider programming as the process of turning a brilliant idea into a reality, which can bring you strong feelings of achievment and satisfactory. Engineering is the bridge that takes people from standard life to e-life, which makes the whole world fantastic.</p>
-<p>I love my life,  and full of enthusiasm, love cooking, love sporting, love travelling and  exploring.  Look forward to life and future.I hope I can always have a positive heart to meet every beautiful moment and  challenge.🎆</p>
 ]]></content>
     </entry>
 </feed>
