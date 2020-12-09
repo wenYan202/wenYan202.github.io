@@ -47,30 +47,30 @@
                             <header class="section-header u-textAlignCenter">
                     <h2 class="grap--h2">Master Thesis- Conception and Development of an Augmented Reality Recommender System for Garden Design</h2>
                     <div class="block-postMetaWrap">
-                        <time>10-01-2020</time>
+                        <time>08-01-2020</time>
                     </div>
                 </header>
                 <div class="grap">
 					
 					<!-- more -->
-<h1 id="abstract">Abstract</h1>
+<p><strong>Abstract</strong></p>
 <p>Gardening is much more complicated than one could think at first. Besides considering the aesthetics, further expertise is needed, especially regarding the many different aspects affecting the small ecosystem composed by the chosen plants. In order to ease things for amateur gardeners, here it is presented an intuitive approach of augmented reality garden design tool for mobile devices. The start of this process consists in gathering surrounding information and identifying user preferences. After calculating the recommendations, the appropriate garden arrangement can be visualized on the mobile device via a 3D preview, allowing users to modify the given output if needed.</p>
-<h1 id="conception-design">Conception Design</h1>
+<p><strong>Conception Design</strong></p>
 <p>In consideration of the high complexity of the horticultural design, it is difficult for amateurs to master this expertise in a short period. An approach combining RS and AR is proposed to provide a recommended garden layout for those who lack horticultural knowledge. Users can enjoy the process of garden design on a scientific and aesthetic basis.<br>
 <img src="https://wenyan202.github.io//post-images/1607546241345.JPG" alt="" loading="lazy"><br>
 To achieve this goal, the operations of this project can be divided into three steps.<br>
-<strong>Step 1. Area Detection</strong><br>
+<em>Step 1. Area Detection</em><br>
 Users need to scan the garden and determine the boundary as well as the available space in the garden.<br>
-<strong>Step 2. Preference Elicitation</strong><br>
+<em>Step 2. Preference Elicitation</em><br>
 The user preferences, including location and favorite color, need to be filled. All this information is the basis of the RS.<br>
-<strong>Step 3. Recommendation Visualization and Customization.</strong><br>
+<em>Step 3. Recommendation Visualization and Customization.</em><br>
 After finishing inputting, the server starts to calculate the recommendation algorithm and visualize the output. The outcome should be customized easily.</p>
-<h1 id="system-architecture">System Architecture</h1>
+<p><strong>System Architecture</strong></p>
 <p>The application is based on the client-server model, and its essential components can be divided into three sections: database, user interface, and server.<br>
 The pivot section of this app is the server, which is used to connect the user interface and database, realize the operations (create, read, update and delete) on the database, and implement the recommendations. The server uses TCP protocol for connection to assure the stable connection, provide reliable transmission, and ensure the accessibility of subsequently recommended algorithms.<br>
 <img src="https://wenyan202.github.io//post-images/1607545455401.JPG" alt="" loading="lazy"><br>
 The workflow of the whole system is divided into two processes: the request process (represented by the red arrow in Figure) and the response process (represented by the green arrow). The user submits garden restrictions and user preferences through the interface, along with the necessary information for filter. After obtaining the required information, the server queries and outputs the correct data through the filter algorithm, and loads the data as input information into the RS model to calculate. The algorithm here consists of two parts: plant selection and garden arrangement. Finally, the system generates the recommended garden layout result as an output, and return to the user interface and visualize it by AR.</p>
-<h1 id="prototype-implementation">Prototype Implementation</h1>
+<p><strong>Prototype Implementation</strong></p>
 <p>For this prototype, the determination of the garden boundary is letting users walk around the garden. After choosing the favorite fence style, users follow the instructions given by the system to start the corresponding operation.<br>
 Figure (https://wenyan202.github.io//post-images/1607547903436.JPG)<br>
 The garden design is in a specific real-world scenario. For the non-empty garden, the already existing objects must be considered. This part is about how users to place the actual objects in the garden.<br>
@@ -84,11 +84,11 @@ The six garden design templates are extracted from the successful garden design 
 After finishing the design operation, users can view the detail of all objects in the garden.<br>
 <img src="https://wenyan202.github.io//post-images/1607548791391.JPG" alt="" loading="lazy"><br>
 After the final garden is approved, the user can save the floor plan into the database directly. The saved garden, which is presented in the form of a 2D map, can be viewed. All the garden details, including user preferences and placed objects can be checked as well.</p>
-<h1 id="evaluation">Evaluation</h1>
+<p><strong>Evaluation</strong></p>
 <p>Evaluation is an indispensable part of software development. The usability of functions, the reliability of the recommendation algorithms, and the superiority of the results would be validated and proved through evaluation. Besides, a fact-based, unbiased, and reasonable evaluation can also help to obtain an overall understanding of the garden design tool and understand its prospects in future development.<br>
-<strong>SUS</strong><br>
+<em>SUS</em><br>
 The score reported by SUS items is 77.336, which qualifies as “Good”. The score does not reach the “Excellent&quot;, which indicates that the usability of the system still needs to be strengthened, and the design of the user interface should involve more hints to ensure simple and easy learning.<br>
-<strong>UEQ</strong><br>
+<em>UEQ</em><br>
 Figure below illustrates the mean value for per item in UEQ, which consists of eight items. The scores of the last two items are particularly high, which indicates that users have approved the innovative aspects of the application. The items 1-4 represent pragmatic quality and the rest express the hedonic quality of the project.<br>
 <img src="https://wenyan202.github.io//post-images/1607549577627.JPG" alt="" loading="lazy"><br>
 From the results of the evaluation, we could conclude that the functionality of the app seems to meet the requirement of users. The usability and user experience of the project are good, although some details can be optimized, the overall evaluation is satisfactory.</p>
