@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wenyan202.github.io/</id>
     <title>wen&apos;s blog</title>
-    <updated>2020-12-09T15:43:40.998Z</updated>
+    <updated>2020-12-09T18:03:57.279Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wenyan202.github.io/"/>
     <link rel="self" href="https://wenyan202.github.io/atom.xml"/>
@@ -10,6 +10,23 @@
     <logo>https://wenyan202.github.io/images/avatar.png</logo>
     <icon>https://wenyan202.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, wen&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[About Me ]]></title>
+        <id>https://wenyan202.github.io/post/about/</id>
+        <link href="https://wenyan202.github.io/post/about/">
+        </link>
+        <updated>2019-01-24T21:09:48.000Z</updated>
+        <summary type="html"><![CDATA[<p>🤝Hello, I'm Wen Yan. Welcome to my Blog. 👏</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>🤝Hello, I'm Wen Yan. Welcome to my Blog. 👏</p>
+<!-- more -->
+<p>🙋I am a Chinese girl. I finished my bachelor's degree at the University  Zhengzhou in China. My major was computer science and technology. Then I come to Germany to start my master and mainly focus on embedded system. In 2019, I graduated from Unnversity Duisburg-Essen. 👩‍🎓</p>
+<p>❤️I love my major, comperter science and engeering.❤️</p>
+<p>My time as a bachelor student opened my eyes to the excitement and wider benefit of computer science.  And then I had the chance to do some different projects on my Masters stage and that's inspired me to take up the challenge of future.</p>
+<p>I condersider programming as the process of turning a brilliant idea into a reality, which can bring you strong feelings of achievment and satisfactory. Engineering is the bridge that takes people from standard life to e-life, which makes the whole world fantastic.</p>
+<p>I love my life,  and full of enthusiasm, love cooking, love sporting, love travelling and  exploring.  Look forward to life and wonder about the future.I hope I can always have a positive heart to meet every beautiful moment and  challenge.🎆</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://wenyan202.github.io/post/hello-gridea/</id>
