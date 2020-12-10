@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimal-ui" />
+    <title>Information Nutrition Labeling for better Imformation Retrieval | wen&#39;s blog</title>
+<link rel='stylesheet' id='puma-css'  href='https://wenyan202.github.io//styles/main.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='puma-css'  href='https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css' media='screen' />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<script type='text/javascript' src='https://wenyan202.github.io//media/scripts/jquery.js'></script>
+<script type='text/javascript' src='https://wenyan202.github.io//media/scripts/jquery-migrate.min.js'></script>
+        <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+         <script >hljs.initHighlightingOnLoad();</script>
+         
+</head>
+<body class="single single-post postid-3788 single-format-standard">
+	<!--加入跟随滑动的顶部-->
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+			<h1 class="site-title">
+				<a href="https://wenyan202.github.io/" title="wen&#39;s blog">wen&#39;s blog</a>
+			</h1>
+		</div>
+
+		<a class="primary-nav-trigger" href="javascript:void(0)">
+			<span class="menu-icon"></span>
+		</a>
+		
+	</header>
+		<div class="site-navigation-wrapper">
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<ul class="primary-nav">
+                    
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="Main Page" href="https://wenyan202.github.io/">Main Page</a></li>
+                
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="Tags" href="/tags">Tags</a></li>
+                
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="About" href="/post/about/">About</a></li>
+                
+	
+			</ul>
+		</nav>			
+	</div>
+	<!--跟随滑动的顶部结束-->
+	<div class="surface-content">    <main class="main-content">
+        <section class="section-body">
+                            <header class="section-header u-textAlignCenter">
+                    <h2 class="grap--h2">Information Nutrition Labeling for better Imformation Retrieval</h2>
+                    <div class="block-postMetaWrap">
+                        <time>10-12-2020</time>
+                    </div>
+                </header>
+                <div class="grap">
+					
+					<p>This is a large project and our team focus on implementation to add a new label to classify good news and bad news. It’s a good bad news classifier, and it’s Supervised Learning.<br>
+<img src="https://wenyan202.github.io//post-images/1607616799256.JPG" alt="" loading="lazy"><br>
+First, we unify the standard of news classification We manually selected 300 English news articles from different countries. The news topic includes world, business, technology, health, and entertainment. And there are three different clusters of good news or bad news and neutral news. These data are organized as a CSV file. We selected half of them randomly and read each news and give it a score manually. Take this news and the final scores as the original data.</p>
+<p>Then we filtered the news to remove words such as a the, then we need to find news’ core idea before processing the text information.</p>
+<p>Here the method we used first is TF-IDF. This method calculates the  TF-IDF value for every word, and the larger the value is, generally speaking, the higher the importance of this word in this article will be, to achieve feature extraction.</p>
+<p>Then chi-Squared Test is used to test whether there is a relationship between variables. Because words with high word frequency may not necessarily represent importance, this step is carried out to select the features which were just extracted.</p>
+<p>Finally, This data information was represented by the Bag of Words model. A dictionary is built based on the document, and then an n-dimensional array is used to represent the document.</p>
+<p>After processing the data, it is then data analyzed using machine learning classification methods.</p>
+<p>Here we called four classification methods, Naive Bayes, SVM, Logistic Regression, and LSTM. These four methods are all good classification methods for machine learning, but the results are not the same because of the different algorithm and other reasons like the correlation of the previous data.<br>
+<img src="https://wenyan202.github.io//post-images/1607616883695.JPG" alt="" loading="lazy"><br>
+The quality of the machine learning method is not only described by the accuracy, here are four main criteria to describe the final machine learning results. It’s obvious that naïve Bayes works well.</p>
+<p>Accuracy is the most intuitive performance measure and it is simply a ratio of correctly predicted observation to the total observations. but as for some great percent data it may not describe so well.</p>
+<p><strong>Precision</strong> is the ratio of correctly predicted positive observations to the total predicted positive observations.<br>
+<strong>Recall</strong> is the ratio of correctly predicted positive observations to the all observations in actual class it will be good for the score more than 0.5.<br>
+<strong>F1 Score</strong> is the weighted average of Precision and Recall. Therefore, this score takes both false positives and false negatives into account. Intuitively it is not as easy to understand as accuracy, but F1 is usually more useful than accuracy, especially if you have an uneven class distribution.<br>
+<strong>TF-IDF:</strong> This method calculates the  TF-IDF value for every word, and the larger the value is, generally speaking, the higher the importance of this word in this article will be.<br>
+<strong>chi-Squared Test</strong>: used to test whether there is a relationship between variables. If there is a low result of it then this part may not so useful for model.<br>
+<strong>Bag of Words model:</strong> actually it's a representing method of text data. here a dictionary is built based on the document, and then an n-dimensional array is used to represent the document.<br>
+<strong>Logistic Regression</strong> : It uses a logistic function to frame binary output model. use sigmoid function. The output of the logistic regression will be a probability (0≤x≤1), and can be used to predict the binary 0 or 1 as the output.<br>
+<strong>Naive bayes</strong> is a generative model. Naive bayes works well with small datasets.<br>
+<strong>SVM</strong> :support vector machine  works relatively well when there is a clear margin of separation between classes. SVM is more effective in high dimensional spaces.but not suitable for large data sets.<br>
+<strong>LSTM</strong>:  Long short-term memory. They are a special kind of Neural Network called Recurrent Neural Networks. but it always has the overfitting problems.</p>
+
+                </div>
+
+                <div class="post--keywords" itemprop="keywords">
+					 <a href="https://wenyan202.github.io/tag/q4Gylidxo/" class="post--keyword" data-title="Machine Learning" data-type="post_tag" data-term-id="39">Machine Learning</a>           </div>
+
+
+
+                      </section>
+    </main>
+</div>
+	<footer class="site-footer u-textAlignCenter">
+    	<div class="footer-branding">
+            <a href="https://wenyan202.github.io/" title="wen&#39;s blog">wen&#39;s blog</a>
+									<p class="site-description">The more we do the more we can do</p>
+			         </div>
+		 <hr />
+		 <div class="social-links">
+		                       
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+				</div>
+        <div class="footer-copy">
+                My blog is still in development ^-^
+        </div>
+
+    </footer>
+	<div class="back-to-top u-hide" onclick="backToTop();"><i class="iconfont icon-xiangshang"></i></div>
+
+<script type='text/javascript' src='https://wenyan202.github.io//media/scripts/main.js'></script>
+</body>
+</html>
