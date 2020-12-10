@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimal-ui" />
+    <title>  IoT- Smart Trash can Management System | wen&#39;s blog</title>
+<link rel='stylesheet' id='puma-css'  href='https://wenyan202.github.io//styles/main.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='puma-css'  href='https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css' media='screen' />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<script type='text/javascript' src='https://wenyan202.github.io//media/scripts/jquery.js'></script>
+<script type='text/javascript' src='https://wenyan202.github.io//media/scripts/jquery-migrate.min.js'></script>
+        <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+         <script >hljs.initHighlightingOnLoad();</script>
+         
+</head>
+<body class="single single-post postid-3788 single-format-standard">
+	<!--加入跟随滑动的顶部-->
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+			<h1 class="site-title">
+				<a href="https://wenyan202.github.io/" title="wen&#39;s blog">wen&#39;s blog</a>
+			</h1>
+		</div>
+
+		<a class="primary-nav-trigger" href="javascript:void(0)">
+			<span class="menu-icon"></span>
+		</a>
+		
+	</header>
+		<div class="site-navigation-wrapper">
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<ul class="primary-nav">
+                    
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="Main Page" href="https://wenyan202.github.io/">Main Page</a></li>
+                
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="Tags" href="/tags">Tags</a></li>
+                
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="About" href="/post/about/">About</a></li>
+                
+	
+			</ul>
+		</nav>			
+	</div>
+	<!--跟随滑动的顶部结束-->
+	<div class="surface-content">    <main class="main-content">
+        <section class="section-body">
+                            <header class="section-header u-textAlignCenter">
+                    <h2 class="grap--h2">  IoT- Smart Trash can Management System</h2>
+                    <div class="block-postMetaWrap">
+                        <time>17-01-2020</time>
+                    </div>
+                </header>
+                <div class="grap">
+					
+					<p><strong>Introduction</strong></p>
+<p>The system is based on Arduino and ultrasonic sensors to monitor the fullness of the trash cans and to send the collected data to Clould using Rasberry PI with WIFI. The cleaners can know the situation of each trash can at any time through android application.</p>
+<p><strong>System Architeture</strong><br>
+This the whole architecture of the whole system the sensor node and the trash can compose the smart can, Arduino sent the measured data to the gateway through Zig Bee communication. Then the gateway sends the data to a remote Azure cloud database and the data can also be stored here. Then user can use Android app to access the data.</p>
+<figure data-type="image" tabindex="1"><img src="https://wenyan202.github.io//post-images/1607613468766.JPG" alt="" loading="lazy"></figure>
+<p><strong>Material</strong></p>
+<ul>
+<li>A. Arduino Uno<br>
+It’s a single-board microcontroller, designed to make the application of interactive objects or environments more accessible. Sense the environment by receiving input from variety of sensors.</li>
+<li>B.Ultrasonic Sensor<br>
+This is the working principle of the ultrasonic sensor which is in the top of trash can. it used for distance measuring which uses reflection mechanism. As soon as there is a signal to sensor, it start  to send waves and when it hit an object, it will reflect, and then the echo pin can receive it. That's how it calculates the distance.<br>
+<img src="https://wenyan202.github.io//post-images/1607613549208.JPG" alt="" loading="lazy"></li>
+<li>C. Rasberry PI<br>
+Raspberry Pi is a low cost, credit card sized, computer that performs various applications. Some of its main features include 1GB of RAM, 4 USB Ports, General Purpose Input Output pins, Linux support. These features give programmers a wide range for diverse applications. It is used as gateway in the project.</li>
+<li>D. Zig bee module<br>
+Zig Bee is an IEEE 802.15.4-based specification for a suite of high-level communication protocols used to create personal area networks with small, low-power digital radios, such as for home automation, medical device data collection, and other low-power low-bandwidth needs, designed for small scale projects which need wireless connection.</li>
+</ul>
+<p><strong>Implementation</strong><br>
+The framework of the system can be divided into 4 stages:</p>
+<ul>
+<li>
+<ol>
+<li><strong>The Smart Bin</strong>: sensor node is mounted on the bin that composed the smart bin. Ultrasonic sensors are used for level measurement of garbage in the bin. Arduino sent the measured data to the gateway through Zig Bee communication.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li><strong>Gateway</strong>: the status of trash cans is collected to IoT gateway through Zigbee receiver module. Then the gateway sends the data and also stores to a remote Azure database.</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li><strong>Cloud Database</strong>: a database created in Azure cloud-platform to store information.</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li><strong>User Interface</strong>: a android-based graphic user interface is designed to help user see the fullness of each trash can at any time.</li>
+</ol>
+</li>
+</ul>
+<p><img src="https://wenyan202.github.io//post-images/1607613729937.png" alt="" loading="lazy"><br>
+<strong>User Interface</strong><br>
+This is the user interface of the system, first user need to login the system, and then choose layer and the trash cans distribution of this layer can be seen. when user clicks the one can, it will access database to get the current height of the garbage. Then the fullness of the trash can will be displayed.</p>
+
+                </div>
+
+                <div class="post--keywords" itemprop="keywords">
+					 <a href="https://wenyan202.github.io/tag/AF3fcbgfm/" class="post--keyword" data-title="IoT" data-type="post_tag" data-term-id="39">IoT</a>           </div>
+
+
+
+                      </section>
+    </main>
+</div>
+	<footer class="site-footer u-textAlignCenter">
+    	<div class="footer-branding">
+            <a href="https://wenyan202.github.io/" title="wen&#39;s blog">wen&#39;s blog</a>
+									<p class="site-description">The more we do the more we can do</p>
+			         </div>
+		 <hr />
+		 <div class="social-links">
+		                       
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+				</div>
+        <div class="footer-copy">
+                My blog is still in development ^-^
+        </div>
+
+    </footer>
+	<div class="back-to-top u-hide" onclick="backToTop();"><i class="iconfont icon-xiangshang"></i></div>
+
+<script type='text/javascript' src='https://wenyan202.github.io//media/scripts/main.js'></script>
+</body>
+</html>
