@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimal-ui" />
+    <title>IoT Digital Twin-VR Green House | wen&#39;s blog</title>
+<link rel='stylesheet' id='puma-css'  href='https://wenyan202.github.io//styles/main.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='puma-css'  href='https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css' media='screen' />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<script type='text/javascript' src='https://wenyan202.github.io//media/scripts/jquery.js'></script>
+<script type='text/javascript' src='https://wenyan202.github.io//media/scripts/jquery-migrate.min.js'></script>
+        <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+         <script >hljs.initHighlightingOnLoad();</script>
+         
+</head>
+<body class="single single-post postid-3788 single-format-standard">
+	<!--加入跟随滑动的顶部-->
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+			<h1 class="site-title">
+				<a href="https://wenyan202.github.io/" title="wen&#39;s blog">wen&#39;s blog</a>
+			</h1>
+		</div>
+
+		<a class="primary-nav-trigger" href="javascript:void(0)">
+			<span class="menu-icon"></span>
+		</a>
+		
+	</header>
+		<div class="site-navigation-wrapper">
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<ul class="primary-nav">
+                    
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="Main Page" href="https://wenyan202.github.io/">Main Page</a></li>
+                
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="Tags" href="/tags">Tags</a></li>
+                
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="About" href="/post/about/">About</a></li>
+                
+	
+			</ul>
+		</nav>			
+	</div>
+	<!--跟随滑动的顶部结束-->
+	<div class="surface-content">    <main class="main-content">
+        <section class="section-body">
+                            <header class="section-header u-textAlignCenter">
+                    <h2 class="grap--h2">IoT Digital Twin-VR Green House</h2>
+                    <div class="block-postMetaWrap">
+                        <time>16-01-2020</time>
+                    </div>
+                </header>
+                <div class="grap">
+					
+					<p><strong>Conception</strong><br>
+A digital twin is the concept of building the connection between digital world and physical world. In the project, we designed a wireless sensor network that provides real-time monitoring of light, temperature, humidity of the greenhouse.</p>
+<p><strong>System Architecture</strong><br>
+This is the architecture of the system, let’s say that there is a greenhouse in the distance where you cannot monitor it in person, and there are some different sensors installed in it, like heat sensor, light sensor and humidity sensor, and the data collected from sensor is sent to the IoT gateway which here is Raspberry PI. then the Raspberry PI upload the information to remote server.  The server runs on computer can also store data in database.<br>
+<img src="https://wenyan202.github.io//post-images/1607601914580.JPG" alt="" loading="lazy"><br>
+To enhance the user's sensory perception, we build a 3D greenhouse by Unity, then the user can interact with the 3D scene and use the VR device to view the environmental information inside of the greenhouse.<br>
+And also we made a very simple user interface  to let user control the light which is in the actual greenhouse, like switch the light on or off.  and at the same time the scene you view with VR is also changed.</p>
+<p><strong>3D Scene</strong><br>
+Here are some 3D greenhouse scene we have build on Unity. The first one is the inside, here you can see the light is on now. Another one is the outside of greenhouse.<br>
+<img src="https://wenyan202.github.io//post-images/1607601926993.png" alt="" loading="lazy"></p>
+<p><strong>The Sensor Node:</strong><br>
+Arduino works with different sensors to collect data/ control the switch related to the command.<br>
+<strong>IoT Gateway:</strong><br>
+Raspberry PI is used as a gateway to collect data from Arduino and upload the information to remote server. Download commands from Server and transmits to Arduino.<br>
+<strong>Server:</strong><br>
+Server runs on a tablet computer. It stores data from IoT gateway in database.<br>
+<strong>User Interface:</strong><br>
+Client provides users with a 3D greenhouse scenes to allow them manage and view information.</p>
+
+                </div>
+
+                <div class="post--keywords" itemprop="keywords">
+					 <a href="https://wenyan202.github.io/tag/AF3fcbgfm/" class="post--keyword" data-title="IoT" data-type="post_tag" data-term-id="39">IoT</a>  <a href="https://wenyan202.github.io/tag/xMSo18ZrP/" class="post--keyword" data-title="Unity" data-type="post_tag" data-term-id="39">Unity</a>  <a href="https://wenyan202.github.io/tag/bdwqvLoGU/" class="post--keyword" data-title="AR/VR" data-type="post_tag" data-term-id="39">AR/VR</a>           </div>
+
+
+
+                      </section>
+    </main>
+</div>
+	<footer class="site-footer u-textAlignCenter">
+    	<div class="footer-branding">
+            <a href="https://wenyan202.github.io/" title="wen&#39;s blog">wen&#39;s blog</a>
+									<p class="site-description">The more we do the more we can do</p>
+			         </div>
+		 <hr />
+		 <div class="social-links">
+		                       
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+				</div>
+        <div class="footer-copy">
+                My blog is still in development ^-^
+        </div>
+
+    </footer>
+	<div class="back-to-top u-hide" onclick="backToTop();"><i class="iconfont icon-xiangshang"></i></div>
+
+<script type='text/javascript' src='https://wenyan202.github.io//media/scripts/main.js'></script>
+</body>
+</html>

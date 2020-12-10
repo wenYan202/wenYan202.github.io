@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wenyan202.github.io/</id>
     <title>wen&apos;s blog</title>
-    <updated>2020-12-10T11:30:15.267Z</updated>
+    <updated>2020-12-10T12:08:45.324Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wenyan202.github.io/"/>
     <link rel="self" href="https://wenyan202.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://wenyan202.github.io/images/avatar.png</logo>
     <icon>https://wenyan202.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, wen&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[IoT Digital Twin-VR Green House]]></title>
+        <id>https://wenyan202.github.io/post/iot-digital-twin-vr-green-house/</id>
+        <link href="https://wenyan202.github.io/post/iot-digital-twin-vr-green-house/">
+        </link>
+        <updated>2020-01-16T15:01:34.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Master Thesis- Conception and Development of an Augmented Reality Recommender System for Garden Design]]></title>
         <id>https://wenyan202.github.io/post/conception-and-development-of-an-augmented-reality-recommender-system-for-garden-design/</id>
